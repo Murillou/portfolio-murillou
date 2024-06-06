@@ -4,8 +4,8 @@ export function Header() {
       <div>DevMori</div>
       <ul className="flex gap-10">
         <li>Sobre mim</li>
-        <li>Projetos</li>
         <li>Skills</li>
+        <li>Projetos</li>
         <li>Contato</li>
       </ul>
     </header>

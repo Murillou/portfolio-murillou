@@ -1,4 +1,4 @@
-import { GithubLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import perfilImage from '../../assets/minha-foto.jpeg';
 
 export function Perfil() {
@@ -26,13 +26,10 @@ export function Perfil() {
             href="https://www.linkedin.com/in/murillo-vin%C3%ADcius-ferreira-pontes-5a7595219/"
             target="_blank"
           >
-            <LinkedinLogo className="text-blue-500" size={50} />
+            <FaLinkedin className="text-blue-500" size={50} />
           </a>
           <a href="https://www.github.com/Murillou" target="_blank">
-            <GithubLogo className="text-slate-100" size={50} />
-          </a>
-          <a href="https://www.instagram.com/moori_v/" target="_blank">
-            <InstagramLogo className="text-orange-500" size={50} />
+            <FaGithub className="text-white" size={50} />
           </a>
         </div>
       </section>
