@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export function AboutMe({ aboutMeRef }) {
+export function AboutMe() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -14,7 +14,6 @@ export function AboutMe({ aboutMeRef }) {
     <main
       className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white mt-24 font-poppins"
       data-aos="fade-up"
-      ref={aboutMeRef}
     >
       <h1 className="font-bold text-5xl text-green-500">Sobre mim</h1>
 
