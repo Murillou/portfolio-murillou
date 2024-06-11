@@ -3,7 +3,7 @@ import perfilImage from '../../assets/minha-foto.jpeg';
 
 export function Perfil() {
   return (
-    <main className="flex items-center gap-40 max-w-screen-2xl mx-auto p-10">
+    <main className="flex flex-col items-center gap-40 max-w-screen-2xl mx-auto p-10">
       <section>
         <div>
           <img
