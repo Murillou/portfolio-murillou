@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <>
-      <header className="flex flex-col justify-between font-poppins p-10 max-w-screen-2xl mx-auto bg-gray text-gray-text md:flex-row relative ">
+      <header className="flex flex-col justify-around font-poppins p-5 max-w-7xl mx-auto bg-gray text-gray-text md:flex-row lg:justify-between relative ">
         <div className="flex justify-between items-center w-full md:w-auto">
           <div>DevMori</div>
           <button className="md:hidden" onClick={toggleMenu}>

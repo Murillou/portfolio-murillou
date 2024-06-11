@@ -1,35 +1,56 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import perfilImage from '../../assets/minha-foto.jpeg';
+import perfilImage from '../../assets/a920d103-0490-4120-9bef-6b1d9d4c57e8.jpg';
+import ReactTypingEffect from 'react-typing-effect';
 
 export function Perfil() {
   return (
-    <main className="flex flex-col items-center gap-40 max-w-screen-2xl mx-auto p-10">
-      <section>
-        <div>
+    <main className="flex flex-col items-center justify-around gap-5 font-poppins p-5 max-w-7xl mx-auto md:flex-row md:gap-0">
+      <section className="flex flex-col items-center md:items-start">
+        <div className="relative p-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full">
           <img
-            className="rounded-full border-2 border-solid border-red-900 "
+            className="rounded-full w-56 md:w-72 lg:w-96"
             src={perfilImage}
-            alt=""
+            alt="Murillo Vinícius"
           />
         </div>
       </section>
 
-      <section className="space-y-5">
-        <h1 className="font-extrabold font-poppins text-4xl text-gray-text ">
-          Olá, me chamo Murillo Vinícius! :D
+      <section className="flex flex-col items-center space-y-3 md:items-start md:ml-10">
+        <h1 className="font-extrabold text-xl text-green-600 sm:text-3xl lg:text-4xl">
+          Olá, sou Murillo Vinícius :D
         </h1>
-        <p className="font-semibold font-mono text-2xl text-slate-100">
-          Desenvolvedor Front-End
-        </p>
+
+        <div className="font-semibold text-lg text-slate-100 md:text-2xl">
+          <ReactTypingEffect
+            text={[
+              '<-- Desenvolvedor Web -->',
+              '<-- Guitarrista -->',
+              '<-- Leitor de Mangá -->',
+            ]}
+            speed={80}
+            eraseSpeed={50}
+            typingDelay={200}
+            eraseDelay={1000}
+            cursorClassName="text-green-600"
+          />
+        </div>
+
         <div className="flex gap-3">
           <a
             href="https://www.linkedin.com/in/murillo-vin%C3%ADcius-ferreira-pontes-5a7595219/"
             target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-110 transition-transform"
           >
-            <FaLinkedin className="text-blue-500" size={50} />
+            <FaLinkedin className="text-blue-500" size={40} />
           </a>
-          <a href="https://www.github.com/Murillou" target="_blank">
-            <FaGithub className="text-white" size={50} />
+          <a
+            href="https://www.github.com/Murillou"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:scale-110 transition-transform"
+          >
+            <FaGithub className="text-white" size={40} />
           </a>
         </div>
       </section>
