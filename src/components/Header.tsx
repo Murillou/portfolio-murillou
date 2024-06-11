@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function Header() {
+export function Header({ scrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -50,7 +50,7 @@ export function Header() {
               ></path>
             </svg>
           </button>
-          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500" onClick={() =>} >
             Sobre mim
           </li>
           <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
