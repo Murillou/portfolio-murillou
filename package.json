@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "aos": "3.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-typing-effect": "^2.0.5"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-typing-effect": "^2.0.7",

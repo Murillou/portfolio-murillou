@@ -2,9 +2,23 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import perfilImage from '../../assets/avatar.webp';
 import ReactTypingEffect from 'react-typing-effect';
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export function Perfil() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in-out',
+      once: false,
+    });
+  }, []);
   return (
-    <main className="flex flex-col items-center justify-around gap-5 font-poppins p-5 max-w-7xl mx-auto md:flex-row md:gap-0">
+    <main
+      className="flex flex-col items-center justify-around gap-5 font-poppins p-5 max-w-7xl mx-auto md:flex-row md:gap-0"
+      data-aos="zoom-in-right"
+    >
       <section className="flex flex-col items-center md:items-start">
         <div className="relative p-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full">
           <img
