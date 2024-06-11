@@ -30,7 +30,7 @@ export function Perfil() {
       </section>
 
       <section className="flex flex-col items-center space-y-3 md:items-start md:ml-10">
-        <h1 className="font-extrabold text-xl text-green-600 sm:text-3xl lg:text-4xl">
+        <h1 className="font-extrabold text-xl text-center text-green-600 sm:text-3xl lg:text-4xl">
           Olá, sou Murillo Vinícius :D
         </h1>
 

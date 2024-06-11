@@ -13,7 +13,7 @@ export function Skills() {
   }, []);
 
   return (
-    <main className="mt-24 max-w-5xl mx-auto">
+    <main className="mt-24 max-w-5xl mx-auto" id="skills">
       <SiTypescript className="text-blue-500" size={100} data-aos="fade-up" />
     </main>
   );

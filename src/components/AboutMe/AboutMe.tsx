@@ -12,16 +12,19 @@ export function AboutMe() {
   }, []);
   return (
     <main
+      id="about"
       className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white mt-24 font-poppins"
       data-aos="fade-up"
     >
-      <h1 className="font-bold text-5xl text-green-500">Sobre mim</h1>
+      <h1 className="font-bold text-3xl md:text-5xl text-green-500">
+        Sobre mim
+      </h1>
 
-      <h1 className="font-mono text-2xl text-gray-opacity">
+      <h1 className="font-mono text-center text-2xl text-gray-opacity">
         Quem é Murillo Vinícius?
       </h1>
 
-      <div className="max-w-5xl text-center text-lg text-gray-opacity space-y-3">
+      <div className="max-w-5xl p-3 text-center text-md sm:text-lg text-gray-opacity space-y-3">
         <p>
           Sou um amante da programação desde os 14 anos, quando tive o primeiro
           contato na robótica programando em Arduino, lembro do como se fosse
@@ -50,7 +53,7 @@ export function AboutMe() {
 
         <p>
           Nas horas vagas, costumo ler mangás (de preferência os clássicos),
-          tocar guitarra e jogar jogos de ritmos .
+          tocar guitarra e jogar jogos de ritmos.
         </p>
       </div>
     </main>
