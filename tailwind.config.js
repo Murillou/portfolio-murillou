@@ -10,6 +10,7 @@ export default {
       colors: {
         gray: '#1c1a1a',
         'gray-text': '#E9E9E8',
+        'gray-opacity': '#A4A3A3',
       },
     },
   },
