@@ -50,10 +50,18 @@ export function Header() {
               ></path>
             </svg>
           </button>
-          <li>Sobre mim</li>
-          <li>Skills</li>
-          <li>Projetos</li>
-          <li>Contato</li>
+          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            Sobre mim
+          </li>
+          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            Skills
+          </li>
+          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            Projetos
+          </li>
+          <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            Contato
+          </li>
         </ul>
       </header>
       {isMenuOpen && (

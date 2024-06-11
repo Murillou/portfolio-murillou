@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import perfilImage from '../../assets/a920d103-0490-4120-9bef-6b1d9d4c57e8.jpg';
+import perfilImage from '../../assets/avatar.webp';
 import ReactTypingEffect from 'react-typing-effect';
 
 export function Perfil() {
