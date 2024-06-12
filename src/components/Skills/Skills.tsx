@@ -62,6 +62,10 @@ export function Skills() {
           <AiOutlineConsoleSql className="text-orange-400" size={100} />
           <p className="text-lg text-gray-700 mt-2">SQL</p>
         </div>
+        <div className="flex flex-col items-center">
+          <SiVim className="text-neutral-500" size={100} />
+          <p className="text-lg text-gray-700 mt-2">Vim</p>
+        </div>
       </div>
     </main>
   );
