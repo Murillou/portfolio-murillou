@@ -20,6 +20,7 @@ export function Skills() {
     <main
       className="flex flex-col items-center justify-center gap-10 my-24 max-w-3xl mx-auto"
       data-aos="fade-up"
+      id="skills"
     >
       <div>
         <h1 className="font-bold text-3xl md:text-5xl text-green-500">
