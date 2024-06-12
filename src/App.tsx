@@ -1,7 +1,7 @@
 import { AboutMe } from './components/AboutMe/AboutMe';
 import { Header } from './components/Header';
 import { Perfil } from './components/Perfil/Perfil';
-// import { Skills } from './components/Skills/Skills';
+import { Skills } from './components/Skills/Skills';
 
 export function App() {
   const scrollToSection = (sectionId: string) => {
@@ -23,7 +23,7 @@ export function App() {
       <Header scrollToSection={scrollToSection} />
       <Perfil />
       <AboutMe />
-      {/* <Skills /> */}
+      <Skills />
       <button
         onClick={scrollToTop}
         className="fixed bottom-2 right-2 md:bottom-10 md:right-10 bg-green-500 text-white p-1 rounded-full shadow-md transition duration-300 hover:bg-green-600 hover:scale-110"
