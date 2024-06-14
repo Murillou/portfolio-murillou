@@ -27,7 +27,7 @@ export function Skills() {
     { icon: SiTailwindcss, color: 'text-teal-400', name: 'TailWind CSS' },
     { icon: FaSass, color: 'text-pink-400', name: 'Sass' },
     { icon: AiOutlineConsoleSql, color: 'text-orange-400', name: 'SQL' },
-    { icon: SiVim, color: 'text-orange-400', name: 'Vim' },
+    { icon: SiVim, color: 'text-slate-400', name: 'Vim' },
   ];
 
   return (
