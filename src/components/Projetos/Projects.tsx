@@ -30,7 +30,7 @@ export function Projects() {
       description: 'Lista de tarefas para gestão de obrigações.',
       languages: ['React', 'TypeScript'],
       repository: 'https://github.com/Murillou/todo-list',
-      deploy: 'https://coffee-delivery.murillou.dev/',
+      deploy: 'https://todo-list.murillou.dev/',
     },
   ];
 
