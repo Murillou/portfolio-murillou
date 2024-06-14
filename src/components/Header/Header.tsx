@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ThemeToggle } from '../Theme/ThemeToggle';
+import { useTheme } from '../../context/ThemeContext.';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
@@ -7,6 +8,7 @@ interface HeaderProps {
 
 export function Header({ scrollToSection }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme } = useTheme();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,7 +16,7 @@ export function Header({ scrollToSection }: HeaderProps) {
 
   return (
     <>
-      <header className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative ">
+      <header className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative">
         <div className="flex justify-between items-center w-full md:w-auto">
           <div>DevMori</div>
           <div className="flex gap-5 md:hidden">
@@ -43,7 +45,9 @@ export function Header({ scrollToSection }: HeaderProps) {
           <ul
             className={`fixed top-0 right-0 h-full flex flex-col gap-10 p-10 transition-transform duration-300 ease-in-out transform ${
               isMenuOpen ? 'translate-x-0 w-1/2 bg-gray' : 'translate-x-full'
-            } md:static md:flex md:flex-row md:w-auto md:translate-x-0 z-20`}
+            } md:static md:flex md:flex-row md:w-auto md:translate-x-0 z-20 ${
+              theme === 'dark' ? 'bg-gray' : 'bg-slate-100'
+            }`}
           >
             <button className="self-end md:hidden" onClick={toggleMenu}>
               <svg
