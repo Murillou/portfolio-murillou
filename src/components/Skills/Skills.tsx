@@ -16,6 +16,18 @@ export function Skills() {
     });
   }, []);
 
+  const skills = [
+    { icon: MdHtml, color: 'text-orange-400', name: 'HTML' },
+    { icon: MdCss, color: 'text-blue-400', name: 'CSS' },
+    { icon: SiTypescript, color: 'text-blue-500', name: 'TypeScript' },
+    { icon: FaReact, color: 'text-blue-400', name: 'React' },
+    { icon: FaNode, color: 'text-green-800', name: 'NodeJs' },
+    { icon: SiTailwindcss, color: 'text-teal-400', name: 'TailWind CSS' },
+    { icon: FaSass, color: 'text-pink-400', name: 'Sass' },
+    { icon: AiOutlineConsoleSql, color: 'text-orange-400', name: 'SQL' },
+    { icon: SiVim, color: 'text-orange-400', name: 'Vim' },
+  ];
+
   return (
     <main
       className="flex flex-col items-center justify-center gap-10 my-24 max-w-3xl mx-auto"
@@ -26,46 +38,14 @@ export function Skills() {
         <h1 className="font-bold text-3xl md:text-5xl text-green-500">
           Skills
         </h1>
-        <p className="text-lg text-gray-600"></p>
       </div>
-
       <div className="flex flex-wrap justify-center text-gray-text gap-10">
-        <div className="flex flex-col items-center">
-          <MdHtml size={100} className="text-orange-400" />
-          <p className="text-lg text-gray-700 mt-2">HTML</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <MdCss size={100} className="text-blue-400" />
-          <p className="text-lg text-gray-700 mt-2">CSS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <SiTypescript className="text-blue-500" size={100} />
-          <p className="text-lg text-gray-700 mt-2">TypeScript</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaReact className="text-blue-400" size={100} />
-          <p className="text-lg text-gray-700 mt-2">React</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaNode size={100} className="text-green-800" />
-          <p className="text-lg text-gray-700 mt-2">Node.js</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <SiTailwindcss size={100} className="text-teal-400" />
-          <p className="text-lg text-gray-700 mt-2">Tailwind CSS</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaSass size={100} className="text-pink-400" />
-          <p className="text-lg text-gray-700 mt-2">Sass</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <AiOutlineConsoleSql className="text-orange-400" size={100} />
-          <p className="text-lg text-gray-700 mt-2">SQL</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <SiVim className="text-neutral-500" size={100} />
-          <p className="text-lg text-gray-700 mt-2">Vim</p>
-        </div>
+        {skills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <skill.icon size={100} className={skill.color} />
+            <p>{skill.name}</p>
+          </div>
+        ))}
       </div>
     </main>
   );
