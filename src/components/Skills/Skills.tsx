@@ -31,8 +31,8 @@ export function Skills() {
   ];
 
   return (
-    <main
-      className="flex flex-col items-center justify-center gap-10 my-24 max-w-3xl mx-auto"
+    <section
+      className="flex flex-col items-center justify-center gap-10 py-24 max-w-3xl mx-auto"
       data-aos="fade-up"
       id="skills"
     >
@@ -53,6 +53,6 @@ export function Skills() {
           </div>
         ))}
       </div>
-    </main>
+    </section>
   );
 }

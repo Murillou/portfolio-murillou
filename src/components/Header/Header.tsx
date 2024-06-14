@@ -72,9 +72,7 @@ export function Header({ scrollToSection }: HeaderProps) {
                   : 'hover:text-blue-500'
               }`}
             >
-              <a href="#" onClick={() => scrollToSection('about')}>
-                Sobre mim
-              </a>
+              <a onClick={() => scrollToSection('about')}>Sobre mim</a>
             </li>
             <li
               className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
@@ -83,9 +81,7 @@ export function Header({ scrollToSection }: HeaderProps) {
                   : 'hover:text-blue-500'
               }`}
             >
-              <a href="#" onClick={() => scrollToSection('skills')}>
-                Skills
-              </a>
+              <a onClick={() => scrollToSection('skills')}>Skills</a>
             </li>
             <li
               className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
@@ -94,9 +90,7 @@ export function Header({ scrollToSection }: HeaderProps) {
                   : 'hover:text-blue-500'
               }`}
             >
-              <a href="#" onClick={() => scrollToSection('projects')}>
-                Projetos
-              </a>
+              <a onClick={() => scrollToSection('projects')}>Projetos</a>
             </li>
           </ul>
           <div className="hidden md:block">

@@ -20,7 +20,7 @@ export function CardProject({
   const { theme } = useTheme();
 
   return (
-    <div
+    <section
       className={`max-w-lg mx-auto overflow-hidden rounded-lg shadow-md ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-green-500 to-purple-400'
@@ -84,6 +84,6 @@ export function CardProject({
           Deploy
         </a>
       </div>
-    </div>
+    </section>
   );
 }

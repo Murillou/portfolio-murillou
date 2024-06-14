@@ -13,9 +13,9 @@ export function AboutMe() {
     });
   }, []);
   return (
-    <main
+    <section
       id="about"
-      className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white mt-24 font-poppins"
+      className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white pt-24 font-poppins"
       data-aos="fade-up"
     >
       <h1
@@ -52,6 +52,6 @@ export function AboutMe() {
           tocar guitarra e jogar jogos de ritmos.
         </p>
       </div>
-    </main>
+    </section>
   );
 }
