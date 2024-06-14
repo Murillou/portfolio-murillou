@@ -1,6 +1,7 @@
 import { AboutMe } from './components/AboutMe/AboutMe';
 import { Header } from './components/Header/Header';
 import { Profile } from './components/Profile/Profile';
+import { Projects } from './components/Projetos/Projects';
 import { Skills } from './components/Skills/Skills';
 import { ThemeProvider } from './context/ThemeContext.';
 
@@ -25,6 +26,7 @@ export function App() {
       <Profile />
       <AboutMe />
       <Skills />
+      <Projects />
       <button
         onClick={scrollToTop}
         className="fixed bottom-2 right-2 md:bottom-2 md:right-5 bg-green-500 text-white p-1 rounded-full shadow-md transition duration-300 hover:bg-green-600 hover:scale-110"

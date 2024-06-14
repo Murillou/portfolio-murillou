@@ -72,7 +72,7 @@ export function Header({ scrollToSection }: HeaderProps) {
               </a>
             </li>
             <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
-              <a href="#" onClick={() => scrollToSection('projetos')}>
+              <a href="#" onClick={() => scrollToSection('projects')}>
                 Projetos
               </a>
             </li>
