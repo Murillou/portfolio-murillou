@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --bg-color: #1c1a1a;
+  --text-color: #e9e9e8;
+}
+
 body {
-  background-color: #1c1a1a;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }

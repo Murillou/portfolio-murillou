@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTheme } from '../../context/ThemeContext.';
 
 export function AboutMe() {
+  const { theme } = useTheme();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -16,15 +18,27 @@ export function AboutMe() {
       className="flex flex-col items-center justify-center gap-10 max-w-7xl mx-auto text-white mt-24 font-poppins"
       data-aos="fade-up"
     >
-      <h1 className="font-bold text-3xl md:text-5xl text-green-500">
+      <h1
+        className={`font-bold text-3xl md:text-5xl ${
+          theme === 'dark' ? 'text-green-600' : 'text-slate-950'
+        }`}
+      >
         Sobre mim
       </h1>
 
-      <h1 className="font-mono text-center text-2xl text-gray-opacity">
+      <h1
+        className={`font-mono text-center text-2xl ${
+          theme === 'dark' ? 'text-gray-opacity' : 'text-slate-700'
+        }`}
+      >
         Quem é Murillo Vinícius?
       </h1>
 
-      <div className="max-w-5xl p-3 text-center text-md sm:text-lg text-gray-opacity space-y-3">
+      <div
+        className={`max-w-5xl p-3 text-center text-md sm:text-lg space-y-3 ${
+          theme === 'dark' ? 'text-gray-opacity' : 'text-slate-700'
+        }`}
+      >
         <p>
           Sou um amante da programação desde os 14 anos, quando tive o primeiro
           contato na robótica programando em Arduino, lembro do como se fosse
@@ -33,24 +47,6 @@ export function AboutMe() {
           para me profissionalizar na área e poder realizar meu sonho de
           trabalhar como programador!
         </p>
-        <p>
-          Atualmente estou trabalhando como freelancer há 1 ano e também
-          desenvolvendo projetos pessoais para adicionar ao portfólio, com
-          sólido conhecimento em linguagens como{' '}
-          <strong className="text-emerald-500 font-extrabold opacity-95">
-            TypeScript
-          </strong>
-          , {''}
-          <strong className="text-emerald-500 font-extrabold">
-            React
-          </strong>, {''}
-          <strong className="text-emerald-500 font-extrabold">
-            NodeJs
-          </strong>{' '}
-          {''}e começando os estudos em{' '}
-          <strong className="text-emerald-500 font-extrabold">C#</strong>
-        </p>
-
         <p>
           Nas horas vagas, costumo ler mangás (de preferência os clássicos),
           tocar guitarra e jogar jogos de ritmos.

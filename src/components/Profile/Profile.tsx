@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export function Perfil() {
+export function Profile() {
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -34,7 +34,7 @@ export function Perfil() {
           Olá, sou Murillo Vinícius :D
         </h1>
 
-        <div className="font-semibold text-lg text-slate-100 md:text-2xl">
+        <div className="font-semibold text-lg  md:text-2xl">
           <ReactTypingEffect
             text={[
               '<-- Desenvolvedor Web -->',
@@ -64,7 +64,7 @@ export function Perfil() {
             rel="noopener noreferrer"
             className="transform hover:scale-110 transition-transform"
           >
-            <FaGithub className="text-white" size={40} />
+            <FaGithub size={40} />
           </a>
         </div>
       </section>

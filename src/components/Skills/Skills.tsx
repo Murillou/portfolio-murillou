@@ -6,8 +6,10 @@ import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTheme } from '../../context/ThemeContext.';
 
 export function Skills() {
+  const { theme } = useTheme();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,11 +37,15 @@ export function Skills() {
       id="skills"
     >
       <div>
-        <h1 className="font-bold text-3xl md:text-5xl text-green-500">
+        <h1
+          className={`font-bold text-3xl md:text-5xl ${
+            theme === 'dark' ? 'text-green-600' : 'text-slate-950'
+          }`}
+        >
           Skills
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center text-gray-text gap-10">
+      <div className="flex flex-wrap justify-center gap-10">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center">
             <skill.icon size={100} className={skill.color} />

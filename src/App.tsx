@@ -1,7 +1,8 @@
 import { AboutMe } from './components/AboutMe/AboutMe';
-import { Header } from './components/Header';
-import { Perfil } from './components/Perfil/Perfil';
+import { Header } from './components/Header/Header';
+import { Profile } from './components/Profile/Profile';
 import { Skills } from './components/Skills/Skills';
+import { ThemeProvider } from './context/ThemeContext.';
 
 export function App() {
   const scrollToSection = (sectionId: string) => {
@@ -19,14 +20,14 @@ export function App() {
   };
 
   return (
-    <>
+    <ThemeProvider>
       <Header scrollToSection={scrollToSection} />
-      <Perfil />
+      <Profile />
       <AboutMe />
       <Skills />
       <button
         onClick={scrollToTop}
-        className="fixed bottom-2 right-2 md:bottom-10 md:right-10 bg-green-500 text-white p-1 rounded-full shadow-md transition duration-300 hover:bg-green-600 hover:scale-110"
+        className="fixed bottom-2 right-2 md:bottom-2 md:right-5 bg-green-500 text-white p-1 rounded-full shadow-md transition duration-300 hover:bg-green-600 hover:scale-110"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +44,6 @@ export function App() {
           />
         </svg>
       </button>
-    </>
+    </ThemeProvider>
   );
 }
