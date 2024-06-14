@@ -41,7 +41,7 @@ export function AboutMe() {
       >
         <p>
           Sou um amante da programação desde os 14 anos, quando tive o primeiro
-          contato na robótica programando em Arduino, lembro do como se fosse
+          contato na robótica programando em Arduino, lembro-me como se fosse
           hoje, naquele exato momento em que fiz o robôzinho andar foi onde meus
           olhos brilharam para o mundo de desenvolvedor, desde então, estudo
           para me profissionalizar na área e poder realizar meu sonho de

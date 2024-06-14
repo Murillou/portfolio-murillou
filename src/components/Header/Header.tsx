@@ -46,7 +46,7 @@ export function Header({ scrollToSection }: HeaderProps) {
             className={`fixed top-0 right-0 h-full flex flex-col gap-10 p-10 transition-transform duration-300 ease-in-out transform ${
               isMenuOpen ? 'translate-x-0 w-1/2 bg-gray' : 'translate-x-full'
             } md:static md:flex md:flex-row md:w-auto md:translate-x-0 z-20 ${
-              theme === 'dark' ? 'bg-gray' : 'bg-slate-100'
+              theme === 'dark' ? 'bg-gray' : 'bg-white'
             }`}
           >
             <button className="self-end md:hidden" onClick={toggleMenu}>
@@ -65,17 +65,35 @@ export function Header({ scrollToSection }: HeaderProps) {
                 ></path>
               </svg>
             </button>
-            <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            <li
+              className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
+                theme === 'dark'
+                  ? 'hover:text-green-500'
+                  : 'hover:text-blue-500'
+              }`}
+            >
               <a href="#" onClick={() => scrollToSection('about')}>
                 Sobre mim
               </a>
             </li>
-            <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            <li
+              className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
+                theme === 'dark'
+                  ? 'hover:text-green-500'
+                  : 'hover:text-blue-500'
+              }`}
+            >
               <a href="#" onClick={() => scrollToSection('skills')}>
                 Skills
               </a>
             </li>
-            <li className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 hover:text-green-500">
+            <li
+              className={`cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 ${
+                theme === 'dark'
+                  ? 'hover:text-green-500'
+                  : 'hover:text-blue-500'
+              }`}
+            >
               <a href="#" onClick={() => scrollToSection('projects')}>
                 Projetos
               </a>
