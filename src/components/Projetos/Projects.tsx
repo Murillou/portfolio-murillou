@@ -1,5 +1,6 @@
 import { CardProject } from './CardProject';
 import coffeeDelivery from '../../assets/coffee-delivery.png';
+import todoList from '../../assets/todo-list.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -18,9 +19,17 @@ export function Projects() {
   const projetos = [
     {
       image: coffeeDelivery,
-      description: 'E-commerce que simula um delivery de café ',
+      description:
+        'E-commerce que simula um delivery de café, utilizando de hooks como useContext, useState e useEffect e consumindo APIs.',
       languages: ['React', 'TypeScript', 'TailWindCss'],
       repository: 'https://github.com/Murillou/coffee-delivery',
+      deploy: 'https://coffee-delivery.murillou.dev/',
+    },
+    {
+      image: todoList,
+      description: 'Lista de tarefas para gestão de obrigações.',
+      languages: ['React', 'TypeScript'],
+      repository: 'https://github.com/Murillou/todo-list',
       deploy: 'https://coffee-delivery.murillou.dev/',
     },
   ];
@@ -28,7 +37,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col max-w-7xl mx-auto p-5"
+      className="flex flex-col max-w-7xl mx-auto p-5 gap-10 "
       data-aos="fade-up"
     >
       <h2
@@ -38,7 +47,7 @@ export function Projects() {
       >
         Meus Projetos
       </h2>
-      <div className="">
+      <div className="flex flex-wrap gap-10">
         {projetos.map((projeto, index) => (
           <CardProject
             key={index}
