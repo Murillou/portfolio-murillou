@@ -40,13 +40,13 @@ export function Projects() {
       className="flex flex-col max-w-7xl mx-auto p-5 gap-10 "
       data-aos="fade-up"
     >
-      <h2
-        className={`text-3xl font-bold text-center mb-8 ${
+      <h1
+        className={`font-bold text-3xl md:text-5xl text-center ${
           theme === 'dark' ? 'text-green-600' : 'text-slate-950'
         }`}
       >
         Meus Projetos
-      </h2>
+      </h1>
       <div className="flex flex-wrap gap-10">
         {projetos.map((projeto, index) => (
           <CardProject
