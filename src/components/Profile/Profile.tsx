@@ -14,6 +14,7 @@ export function Profile() {
       once: false,
     });
   }, []);
+
   return (
     <main
       className="flex flex-col items-center justify-around gap-5 font-poppins p-5 max-w-7xl mx-auto md:flex-row md:gap-0"
@@ -22,7 +23,7 @@ export function Profile() {
       <section className="flex flex-col items-center md:items-start">
         <div className="relative p-1 bg-gradient-to-r from-green-400 to-blue-500 rounded-full">
           <img
-            className="rounded-full w-56 md:w-72 lg:w-96"
+            className="rounded-full w-56 md:w-72 lg:w-96 transform transition-transform duration-500 hover:scale-110 hover:rotate-2 cursor-pointer"
             src={perfilImage}
             alt="Murillo Vinícius"
           />
@@ -68,6 +69,6 @@ export function Profile() {
           </a>
         </div>
       </section>
-    </main>
+    </main  >
   );
 }

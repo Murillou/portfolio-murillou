@@ -45,9 +45,12 @@ export function Skills() {
           Skills
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap  justify-center gap-10">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div
+            key={index}
+            className="flex flex-col items-center transition-transform duration-300 hover:scale-110 "
+          >
             <skill.icon size={100} className={skill.color} />
             <p>{skill.name}</p>
           </div>
