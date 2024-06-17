@@ -22,7 +22,13 @@ export function Header({ scrollToSection }: HeaderProps) {
           <div className="flex items-center text-sm sm:text-2xl font-mono ">
             <BiCodeAlt size={50} className="text-green-500" />{' '}
             <span className="text-green-400 font-extrabold">Dev</span>
-            <span className="text-slate-200 font-extrabold">_Murillou</span>
+            <span
+              className={`font-extrabold ${
+                theme === 'dark' ? 'text-slate-200' : 'text-slate-600'
+              }`}
+            >
+              _Murillou
+            </span>
           </div>
           <div className="flex gap-5 md:hidden">
             <div className="md:hidden">

@@ -1,2 +1,98 @@
-node_modules
-.vite
+# Arquivos de lock de pacotes
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Diretório de dependências instaladas
+node_modules/
+
+# Arquivos gerados pelo build
+/dist
+/build
+
+# Arquivos de configuração de ambiente local
+.env
+.env.local
+.env.*.local
+
+# Arquivos específicos de IDE
+.vscode/
+.idea/
+
+# Arquivos de cache e logs
+*.log
+*.cache
+.cache/
+logs/
+
+# Arquivos de build específicos do Vite
+/.vite/
+
+# Outros arquivos específicos de desenvolvimento
+.eslintcache
+.eslintignore
+.eslintrc.js
+.prettierignore
+.prettierrc.js
+.stylelintignore
+.stylelintrc.js
+
+# Arquivos de configuração TypeScript
+tsconfig.json
+tsconfig.node.json
+
+# Arquivo de configuração do PostCSS
+postcss.config.js
+
+# Arquivos de configuração do Babel
+babel.config.js
+
+# Arquivos de configuração do Jest
+jest.config.js
+
+# Arquivos de configuração do Cypress
+cypress.json
+
+# Arquivos de configuração do Husky
+.husky/
+
+# Arquivos de configuração do lint-staged
+.lintstagedrc
+
+# Arquivos de documentação e README
+README.md
+docs/
+
+# Outros arquivos temporários ou não essenciais
+*.swp
+.DS_Store
+Thumbs.db
+
+# Arquivos de log do servidor
+/server.log
+
+# Arquivos específicos de deployment
+deployment/
+
+# Arquivos específicos de testes
+coverage/
+*.log
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de exemplo ou temporários
+example/
+
+# Arquivos específicos de logs de erro
+logs/
+
+# Arquivos específicos do usuário
+*.sublime-workspace
+
+# Dependências específicas de versão (geralmente para bibliotecas legadas)
+/libraries/
+
+# Arquivos de compilação Java
+/classes/
