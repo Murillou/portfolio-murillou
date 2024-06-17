@@ -8,6 +8,7 @@ interface CardProjectProps {
   languages: string[];
   repository: string;
   deploy: string;
+  onClick: () => void;
 }
 
 export function CardProject({
@@ -16,6 +17,7 @@ export function CardProject({
   languages,
   repository,
   deploy,
+  onClick,
 }: CardProjectProps) {
   const { theme } = useTheme();
 
@@ -28,15 +30,13 @@ export function CardProject({
       }`}
     >
       <div className="relative overflow-hidden">
-        <a href={deploy} target="_blank" rel="noopener noreferrer">
-          <img
-            className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
-            src={image}
-            alt="Imagem do Projeto"
-          />
-        </a>
+        <img className="w-full h-64 " src={image} alt="Imagem do Projeto" />
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div
+          className="absolute inset-0 flex items-center justify-center cursor-pointer
+          "
+          onClick={onClick}
+        >
           <div className="text-center text-white px-6">
             <p className="text-lg font-bold">{description}</p>
             <div className="flex justify-center mt-2 space-x-2">
