@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ThemeToggle } from '../Theme/ThemeToggle';
 import { useTheme } from '../../context/ThemeContext.';
+import { BiCodeAlt } from 'react-icons/bi';
 
 interface HeaderProps {
   scrollToSection: (id: string) => void;
@@ -18,7 +19,11 @@ export function Header({ scrollToSection }: HeaderProps) {
     <>
       <header className="flex flex-col justify-around  items-center font-poppins p-5 max-w-7xl mx-auto md:flex-row lg:justify-between relative">
         <div className="flex justify-between items-center w-full md:w-auto">
-          <div>DevMori</div>
+          <div className="flex items-center text-sm sm:text-2xl font-mono">
+            <BiCodeAlt size={50} className="text-green-500" />{' '}
+            <span className="text-green-400 font-extrabold">Dev</span>
+            <span className="text-slate-200">_Murillou</span>
+          </div>
           <div className="flex gap-5 md:hidden">
             <div className="md:hidden">
               <ThemeToggle />
