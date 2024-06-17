@@ -42,6 +42,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.22
         version: 18.3.0
+      '@types/react-modal':
+        specifier: ^3.16.3
+        version: 3.16.3
       '@types/react-typing-effect':
         specifier: ^2.0.7
         version: 2.0.7
@@ -515,6 +518,9 @@ packages:
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+
+  '@types/react-modal@3.16.3':
+    resolution: {integrity: sha512-xXuGavyEGaFQDgBv4UVm8/ZsG+qxeQ7f77yNrW3n+1J6XAstUy5rYHeIHPh1KzsGc6IkCIdu6lQ2xWzu1jBTLg==}
 
   '@types/react-typing-effect@2.0.7':
     resolution: {integrity: sha512-HSSH1sQ72wp0Sw5mghd/ddzN2sL+wltExNkUh/DGjXIO5rTW55K9KuGamkoO3Dccvi74ZLyy42Wgr/Mv3BBc9g==}
@@ -1878,6 +1884,10 @@ snapshots:
   '@types/prop-types@15.7.12': {}
 
   '@types/react-dom@18.3.0':
+    dependencies:
+      '@types/react': 18.3.3
+
+  '@types/react-modal@3.16.3':
     dependencies:
       '@types/react': 18.3.3
 
