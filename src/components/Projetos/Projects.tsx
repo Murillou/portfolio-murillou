@@ -1,6 +1,7 @@
 import Modal from 'react-modal';
 import coffeeDelivery from '../../assets/coffee-delivery.png';
 import todoList from '../../assets/todo-list.png';
+import nextShop from '../../assets/next-shop.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -33,6 +34,14 @@ export function Projects() {
       languages: ['React', 'TypeScript', 'TailWindCss'],
       repository: 'https://github.com/Murillou/coffee-delivery',
       deploy: 'https://coffee-delivery.murillou.dev/',
+    },
+    {
+      image: nextShop,
+      description:
+        'Simulação de e-commerce desenvolvido com Next.js e Stripe para integração de pagamentos.',
+      languages: ['Next.js', 'TypeScript', 'Stitches'],
+      repository: 'https://github.com/Murillou/next-shop',
+      deploy: 'https://next-shop.murillou.dev/',
     },
     {
       image: todoList,

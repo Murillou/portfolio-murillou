@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import perfilImage from '../../assets/avatar.webp';
+import perfilImage from '../../assets/avatar.jpg';
 import ReactTypingEffect from 'react-typing-effect';
 
 import { useEffect } from 'react';
@@ -52,7 +52,7 @@ export function Profile() {
 
         <div className="flex gap-3">
           <a
-            href="https://www.linkedin.com/in/murillo-vin%C3%ADcius-ferreira-pontes-5a7595219/"
+            href="https://www.linkedin.com/in/murillou/"
             target="_blank"
             rel="noopener noreferrer"
             className="transform hover:scale-110 transition-transform"
@@ -69,6 +69,6 @@ export function Profile() {
           </a>
         </div>
       </section>
-    </main  >
+    </main>
   );
 }
