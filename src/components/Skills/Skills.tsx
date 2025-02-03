@@ -20,7 +20,7 @@ export function Skills() {
   }, []);
 
   const skills = [
-    { icon: SiNextdotjs, color: 'text-white', name: 'Next.js' },
+    { icon: SiNextdotjs, color: 'text-slate-500', name: 'Next.js' },
     { icon: FaReact, color: 'text-blue-400', name: 'React' },
     { icon: SiTypescript, color: 'text-blue-500', name: 'TypeScript' },
     { icon: MdCss, color: 'text-blue-400', name: 'CSS' },
