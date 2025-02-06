@@ -40,16 +40,15 @@ export function AboutMe() {
         }`}
       >
         <p>
-          Sou um amante da programação desde os 14 anos, quando tive o primeiro
-          contato na robótica programando em Arduino, lembro-me como se fosse
-          hoje, naquele exato momento em que fiz o robôzinho andar foi onde meus
-          olhos brilharam para o mundo de desenvolvedor, desde então, estudo
-          para me profissionalizar na área e poder realizar meu sonho de
-          trabalhar como programador!
+          Minha jornada na programação começou aos 14 anos, quando tive meu
+          primeiro contato com robótica e Arduino. Lembro perfeitamente do
+          momento em que fiz um pequeno robô se mover – foi ali que meus olhos
+          brilharam e descobri minha paixão pelo desenvolvimento. Desde então,
+          venho me aprimorando para transformar essa paixão em profissão.
         </p>
         <p>
-          Nas horas vagas, costumo ler mangás (de preferência os clássicos),
-          tocar guitarra e jogar jogos de ritmos.
+          No meu tempo livre, gosto de ler mangás clássicos, tocar guitarra e me
+          divertir com jogos de ritmo.
         </p>
       </div>
     </section>
