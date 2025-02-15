@@ -23,14 +23,18 @@ export function CardProject({
 
   return (
     <section
-      className={`max-w-lg mx-auto overflow-hidden rounded-lg shadow-md ${
+      className={`w-[512px] mx-auto overflow-hidden rounded-lg shadow-md ${
         theme === 'dark'
           ? 'bg-gradient-to-br from-green-500 to-purple-400'
           : 'bg-gradient-to-br from-green-300 to-blue-400'
       }`}
     >
       <div className="relative overflow-hidden">
-        <img className="w-full h-64 " src={image} alt="Imagem do Projeto" />
+        <img
+          className="w-full h-64 object-cover"
+          src={image}
+          alt="Imagem do Projeto"
+        />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div
           className="absolute inset-0 flex items-center justify-center cursor-pointer
@@ -56,6 +60,7 @@ export function CardProject({
           </div>
         </div>
       </div>
+
       <div className="flex items-center justify-center space-x-10 mt-2 p-5">
         <a
           href={repository}
